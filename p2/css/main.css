@@ -783,7 +783,7 @@ footer{
 
   nav ul li a{
     border-top: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--grey);
   }
 
   nav ul li.nav-active a, nav ul li a:hover{
