@@ -176,7 +176,7 @@ nav ul li:hover a{
 
 section{
   width: 100%;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -332,9 +332,9 @@ section{
 }
 
 .search-results{
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   display: flex;
-  column-gap: 50px;
+  column-gap: 20px;
 }
 
 .main-results{
@@ -345,7 +345,7 @@ section{
   width: 70%;
   background: var(--grey);
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -358,13 +358,13 @@ section{
   flex-flow: wrap;
   background: var(--white);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 32%;
+  width: 30%;
   min-width: 250px;
   border-radius: 20px;
   padding: 5px 5px 10px 5px;
   box-sizing: border-box;
   transition: all .6s;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .main-results-item a{
@@ -379,7 +379,7 @@ section{
 
 .main-results-item img{
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -391,7 +391,8 @@ section{
 }
 
 .main-results-item-description h3, .most-popular-item-description h3{
-  margin: 10px 0; padding: 0;
+  margin: 10px 0 0 0; padding: 0;
+  font-size: 18px;
   width: 100%
 }
 
@@ -417,6 +418,10 @@ section{
   color: var(--black);
   text-decoration: none;
   font-weight: 700;
+}
+
+.main-results-more a:hover {
+    color: var(--blue);
 }
 
 .most-popular{
@@ -446,7 +451,7 @@ section{
 
 .most-popular-item a{
   width: 100%;
-  height: 220px;
+  height: 180px;
   padding: 5px;
   display: flex;
   box-sizing: border-box;
@@ -463,17 +468,21 @@ section{
 
 .most-popular-item img{
   width: 30%;
-  min-width: 150px;
+  min-width: 120px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
 
 .most-popular-item-description{
   display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .most-popular-item-description span{
-  flex-grow: 1
+  flex-grow: 1;
+  position: absolute;
+  bottom: 10px;
 }
 
 .location-activities{
@@ -705,6 +714,7 @@ footer{
     box-sizing: border-box;
     border-radius: 0;
     background: var(--white);
+    padding: 20px;
   }
 
   .most-popular{
@@ -721,22 +731,15 @@ footer{
   }
 
   .most-popular-item{
-    width: 48%;
-  }
-
-  .most-popular-item a{
-    display: block;
-    flex-direction: column;
-    height: auto;
-    flex-wrap: wrap;
     width: 100%;
-    padding: 5px 5px 20px 5px;
   }
 
   .most-popular-item img{
-    width: 100%;
-    height: 180px;
-    border-radius: 15px 15px 0 0;
+    height: auto;
+  }
+
+  .most-popular-item-description span{
+    flex-grow: 1;
   }
 
   .location-activities{
@@ -812,8 +815,13 @@ footer{
     background: var(--white);
   }
 
+  .main-results-item img {
+    height: 120px;
+  }
+
   .most-popular{
     flex-direction: column;
+    padding: 20px;
   }
 
   .mp-title-wrapper svg{
@@ -829,7 +837,7 @@ footer{
   }
 
   .location-activities{
-    padding: 0 2%;
+    padding: 0 20px;
   }
 
   .location-activities-col{
