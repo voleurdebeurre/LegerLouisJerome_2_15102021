@@ -467,7 +467,7 @@ section{
 }
 
 .most-popular-item img{
-  width: 30%;
+  width: 35%;
   min-width: 120px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
