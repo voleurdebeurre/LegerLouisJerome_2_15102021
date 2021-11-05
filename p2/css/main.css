@@ -345,7 +345,7 @@ section{
   width: 70%;
   background: var(--grey);
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -431,7 +431,7 @@ section{
   width: 30%;
   background: var(--grey);
   border-radius: 20px;
-  padding: 2%;
+  padding: 20px;
 }
 
 .mp-title-wrapper{
